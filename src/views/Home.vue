@@ -8,11 +8,15 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
+import swal from "sweetalert";
 
 export default {
+  mounted: function() {
+    swal("Hello world!");
+  },
   name: "Home",
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
 };
 </script>
